@@ -1,9 +1,13 @@
 package pages;
 
-@DefaultUrl ("http://automationpractice.com/index.php")
+import net.thucydides.core.annotations.DefaultUrl;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+@DefaultUrl("http://automationpractice.com/index.php")
 public class MainPages extends BasePage {
 
-    @FindBy (css -"a.login" )
+    @FindBy(css -"a.login" )
     private WebElement signInButton;
 
     @FindBy (id - "email")

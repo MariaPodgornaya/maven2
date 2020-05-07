@@ -1,12 +1,16 @@
 package tests;
 
-import com.sun.org.glassfish.gmbal.ManagedAttribute;
-import pages.BasePage;
+import net.serenitybdd.junit.runners.SerenityRunner;
+import net.thucydides.core.annotations.Managed;
+import net.thucydides.core.annotations.Steps;
+import org.junit.After;
+import org.junit.runner.RunWith;
+import org.openqa.selenium.WebDriver;
 
-     @RunWith(SerenityRunner.class)
+@RunWith(SerenityRunner.class)
  public abstract class SimpleTest {
 
-     @Managed (driver = "chrome", uniqueSession = true)
+     @Managed(driver = "chrome", uniqueSession = true)
      private WebDriver driver;
 
      @Steps

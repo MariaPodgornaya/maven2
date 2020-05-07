@@ -1,9 +1,10 @@
 package steps;
 
-import com.sun.org.glassfish.external.probe.provider.annotations.ProbeListener;
+import net.thucydides.core.annotations.Step;
+import net.thucydides.core.steps.ScenarioSteps;
 import pages.MainPages;
 
-public class MainSteps extends ScenarioSteps{
+public class MainSteps extends ScenarioSteps {
 
     private MainPages onPages;
 
