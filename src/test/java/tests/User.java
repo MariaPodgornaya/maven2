@@ -6,5 +6,5 @@ import steps.MainSteps;
 public class User {
 
     @Steps
-    public MainSteps mainPages;
+    public MainSteps mainPage;
 }

@@ -3,11 +3,11 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public class BasePage extends PageObject {
+public class BasePage {
 
     protected BasePage (WebDriver driver) {
         super (driver);
-        PageFactory.initElements(driver, this)
+        PageFactory.initElements(driver, this);
     }
 
 }
