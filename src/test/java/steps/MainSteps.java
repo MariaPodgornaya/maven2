@@ -33,6 +33,28 @@ public class MainSteps extends ScenarioSteps {
         onPages.fillInPasswordField(password);
     }
 
+    @Step
+    public void clickOnSubmitLoginButton() {
+        onPages.clickOnSubmitButton();
+    }
+
+    @Step
+    public void clickOnWomanTab() {
+        onPages.clickOnWomanTab();
+    }
+
+    @Step
+    public void checkOrangeColorsOnItem() {
+        onPages.checkOrangeColorsOnItems();
+    }
+
+    @Step
+    public void clickOnAddToCartButtonsOnItems(int count) {
+        onPages.clickOnAddToCartButtonsOnItems(count);
+    }
+
+
+
 
 
 }

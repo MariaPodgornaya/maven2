@@ -11,7 +11,8 @@ public class LoginTest extends SimpleTest {
         user.mainPage.clickOnSignButton();
         user.mainPage.checkText();
         user.mainPage.fillInEmailAddressField (PropertiesHelper.INSTANCE.getProperty("email"));
-        user.mainPage.fillInPasswordField(PropertiesHelper.INSTANCE.getProperty("passord"));
+        user.mainPage.fillInPasswordField(PropertiesHelper.INSTANCE.getProperty("password"));
+
     }
 
 }
