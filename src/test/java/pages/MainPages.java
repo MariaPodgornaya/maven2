@@ -11,10 +11,6 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static io.appium.java_client.touch.offset.ElementOption.element;
-import static java.nio.channels.Selector.open;
-import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;
-
 @DefaultUrl("http://automationpractice.com/index.php")
 public class MainPages extends BasePage {
 
@@ -52,6 +48,9 @@ public class MainPages extends BasePage {
     private WebElement passwordField;
     private WebElement emailAddressField;
     private WebElement WomanTab;
+
+    @FindBy (id = "contact-link")
+    private WebElement contactUsButton;
 
     protected MainPages (WebDriver driver) {
         super (driver);
@@ -129,6 +128,10 @@ public class MainPages extends BasePage {
                    " '''+(i+1) + '''")).click();
             element(continueShoppingButton).click();
         }
+    }
+
+    public void clickOnContaktUsButton () {
+        element(contactUsButton).click();
     }
 
 

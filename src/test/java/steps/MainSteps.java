@@ -53,6 +53,11 @@ public class MainSteps extends ScenarioSteps {
         onPages.clickOnAddToCartButtonsOnItems(count);
     }
 
+    @Step
+    public void clickOnContactUsButton() {
+        onPages.cl
+    }
+
 
 
 
